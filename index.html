@@ -16,22 +16,30 @@
       rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
     </head>
+    <script>
+      // Função JavaScript para redirecionar para outra página
+      function redirecionarParaOutraPagina() {
+          window.location.href = "contato.html"; // Substitua "contato.html" pelo nome do arquivo da outra página
+      }
+  </script>
     <body>
         <header id="event-subscription">
             <div id="disclaimer">
-                <h2>Goodwin Shelties</h2>
+                <h2>Goodwin Shelties -  Criação responsável</h2>
                 <p class="about-event">
-                    Nossa criacao que vive conosco no dia-a-dia
+                    Nossa criação que vivem conosco em ambiente familiar, nossas companhias que nos nos trazem alegrias diárias.
+
+
                 </p>
+                <p class="aboutSecond">
+                  Nossa criação exclusiva de Pastores de Shetland prioriza o bem-estar dos cães, selecionando-os com base na saúde, 
+                  temperamento, estrutura e beleza. 
+              </p>
             </div>
-            <!-- <div id="subscription-form">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfj1Vjh3yiLNfhSiLOGIRiUamCa5ovv9YImralx6aVkG5JRtQ/viewform?vc=0&c=0&w=1&flr=0">
-                <button class="btn">Quero reservar um filhote</button>
-              </a>
-            </div> -->
             <div id="subscription-form">
                     <p>Reserve seu filhote</p>
-                    <form action="/submit" method="post">
+                    <button class="btn" onclick="redirecionarParaOutraPagina()">Redirecionar</button>
+                    <!-- <form action="/submit" method="post">
                       <div class="form-group">
                         <label for="name">Nome</label>
                         <input type="text" placeholder="Digite seu nome" />
@@ -53,14 +61,16 @@
                         </select>
                       </div>
                       <input type="submit" class="btn" value="Enviar" />
-                    </form>
+                    </form> -->
                   </div>
         </header>
         <section id="key-benefits">
             <h2>Conheça nossos shelties!</h2>
             <div class="conheca-shelties">
                 <p>Cuidados com o máximo respeito e carinho, garantindo seu bem-estar e saúde para que possam ser pais felizes e saudáveis para as futuras ninhadas.
-                            Estamos empenhados em garantir que nossos cães reprodutores sejam de qualidade excepcional, garantido a saude fisica contribuindo para o
+                  </p>
+                  <p style="margin-top: 10px;">          
+                  Estamos empenhados em garantir que nossos cães reprodutores sejam de qualidade excepcional, garantido a saude fisica contribuindo para o
                             desenvolvimento de novos membros adoráveis para as famílias amorosas e atenciosas.
                 </p>
             </div>
@@ -89,20 +99,14 @@
 
         <section id="location">
             <div id="address">
-                <i class="bi bi-geo-alt-fill"></i>
-
-                <div id="address-details">
-                    <p>Rua do evento, 1333</p>
-                    <p>Bairro</p>
-                    <p>Abertura: 14h</p>
+                <div>
+                  <img src="img/cbkc.jpg" alt="Confederação Brasileira de Cinofilia"/>
                 </div>
             </div>
             <div id="about-location">
-                <h3>Local de destaque</h3>
+                <h3>Responsabilidade</h3>
                 <p>
-                    O evento será realizado em um local prestigiado pelos amantes de
-                              Design de Interiores, onde teremos exemplos de vários ambientes, tanto
-                              internos como externos.
+                  Nosso canil é um exemplo de responsabilidade social, sendo afiliado e registrado no CBKC. Planejamos ninhadas pequenas e priorizamos a saúde de nossos animais, pois nossa matriz é mais do que uma simples reprodutora; ela é nossa companheira.
                 </p>
             </div>
         </section>
@@ -200,14 +204,19 @@
         </section>
 
         <footer id="footer">
+          <img src="img/logo.png" alt="Logo" style="width: 250px; height: 370px; align-self: center; margin-top: 107px;"/>
+
             <h3>Goodwin Shelties</h3>
-            <p>aaaaaaaaaaaa</p>
+
+            <p>Goodwin Shelties – Atibaia, SP | Copyright©2024
+
+            </p>
             <p>
                 <span>Entre em contato:</span>
                 oi@indecor.com.br</p>
             <p>
                 <span>Ou pelo telefone:</span>
-                (55)99990-9999</p>
+                (13)98125-1174</p>
         </footer>
     </body>
 </html>
