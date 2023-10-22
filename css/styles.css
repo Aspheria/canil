@@ -468,11 +468,12 @@ color: #fff;
 
   #disclaimer h2 {
     margin-bottom: 0.5em;
+    margin-top: 63px;
   }
 
   #subscription-form {
     max-width: 70%;
-    margin-bottom: 4em;
+    margin-bottom: 8em;
   }
 
   .cbkc img{
