@@ -7,22 +7,30 @@
 }
 
 * {
-  font-family: "Montserrat";
+  font-family: "Lexend Deca";
   margin: 0;
   padding: 0;
 }
 
 /*nav */
 header {
-  background-color: #333;
+  background-color: #5d5d5d;
   color: #fff;
-  text-align: center;
-  padding: 20px;
+  /* text-align: center; */
+  /* padding: 9px; */
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
 
+}
+.logoHeader {
+  width: 72px;
+  height: 61px; 
+  /* display: flex; 
+  z-index: 1; 
+  position: absolute; 
+  margin-top: -20px */
 }
 
 h1 {
@@ -30,8 +38,11 @@ margin: 0;
 }
 
 nav ul {
-list-style: none;
-padding: 0;
+/* list-style: none;
+padding: 0; */
+display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 nav li {
@@ -43,6 +54,7 @@ nav a {
 text-decoration: none;
 color: #fff;
 }
+
 
 .iframe-container{
   background-color: brown;
@@ -262,7 +274,7 @@ color: #fff;
 
 #about-location h3 {
   color: var(--primary);
-  font-size: 2.5em;
+  font-size: 2em;
   margin-bottom: 1em;
   text-transform: uppercase;
 }
@@ -429,13 +441,25 @@ color: #fff;
 #footer span {
   font-weight: bold;
 }
+#footer img {
+  width: 250px; 
+  height: 370px; 
+  align-self: center; 
+  margin-top: 40px;
+  border-top-left-radius: 80%;
+  border-top-right-radius: 80%
+}
+
 
 /* Mobile */
 @media (max-width: 450px) {
   /* Event form */
+.logoHeader {
+
+}
   #event-subscription {
     flex-direction: column;
-    height: auto;
+    height: 776px;
   }
 
   #disclaimer {
@@ -448,7 +472,13 @@ color: #fff;
 
   #subscription-form {
     max-width: 70%;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
+  }
+
+  .cbkc img{
+    width: 163px;
+    margin: 14px;
+    height: 71px
   }
 
   /* Benefits section */
@@ -470,6 +500,8 @@ color: #fff;
     height: auto;
     text-align: center;
     padding: 2em 0;
+    margin-bottom: 0em;
+
   }
 
   #address {
@@ -492,7 +524,12 @@ color: #fff;
   }
 
   #about-location p {
-    display: none;
+   margin-top: 5%;
+   max-width: 344px;
+  }
+
+  .shipmentText{
+    max-width: 95%;
   }
 
   /* Event details container */
@@ -528,5 +565,29 @@ color: #fff;
     width: 80%;
   }
 
+  #icon {
+    margin-top: 40px;
+    height: 666px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("../img/iconSection.jpg");
+    background-position: center;
+    background-size: cover;
+    color: var(--text-color);
+    background-color: red;
+  
+  }
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon-box {
+    padding: 10px;
+   
+    margin: 5px;
+  }
+
+  #footer {
+    margin-bottom: 15px;
+  }
 
 }
