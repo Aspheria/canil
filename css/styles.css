@@ -50,7 +50,7 @@ display: flex;
 
 nav li {
 display: inline;
-margin-right: 20px;
+margin-right: 10px;
 }
 
 nav a {
@@ -497,9 +497,8 @@ margin-bottom: 0;
   }
 
   .cbkc img{
-    width: 163px;
     margin: 14px;
-    height: 71px
+    width: 70%;
   }
 
   /* Benefits section */
